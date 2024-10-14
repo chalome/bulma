@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="notification">
+                <div class="delete"></div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil hic harum eum officia, autem ad
+                temporibus facere corporis qui excepturi,
+                repellat, atque aut possimus consequuntur sint expedita sed totam optio?
+            </div>
+        </div>
+    </section>
+    <script src="">
+        document.addEventListener('DOMContentLoaded', () => {
+            (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+                const $notification = $delete.parentNode;
+
+                $delete.addEventListener('click', () => {
+                    $notification.parentNode.removeChild($notification);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
