@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <!-- Panel -->
+                  <div class="panel is-info">
+                    <p class="panel-heading">Repositories</p>
+                    <div class="panel-block">
+                        <p class="control has-icons-left">
+                            <input type="text" class="input" placeholder="Search">
+                            <span class="icon is-left">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <p class="panel-tabs">
+                        <a href="#" class="is-active">All</a>
+                        <a href="#">public</a>
+                        <a href="#">private</a>
+                        <a href="#">ressources</a>
+                        <a href="#">forks</a>
+                    </p>
+                    <a href="#" class="panel-block is-active">
+                        <span class="panel-icon">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        Bulma
+                    </a>
+                    <a href="#" class="panel-block">
+                        <span class="panel-icon">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        Tailwind
+                    </a>
+                    <a href="#" class="panel-block">
+                        <span class="panel-icon">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        Bootstrap
+                    </a>
+                    <a class="panel-block">
+                        <span class="panel-icon">
+                          <i class="fas fa-code-branch" aria-hidden="true"></i>
+                        </span>
+                        mojs
+                      </a>
+                      <label for="" class="panel-block">
+                        <input type="checkbox" name="" id="">
+                        Remember me
+                      </label>
+                      <div class="panel-block">
+                        <button class="button is-outlined is-fullwidth is-link">
+                            Reset all fields
+                        </button>
+                      </div>
+                  </div>
+
+        <!-- Pagination  -->
+            <nav class="pagination is-centered is-rounded" role="navigation" aria-label="Pagination">
+                <a href="#" class="pagination-previous">Previous</a>
+                <a href="#" class="pagination-next">Next</a>
+                <ul class="pagination-list">
+                    <li><a href="#" class="pagination-link" aria-label="Go to page 1">1</a></li>
+                    <li><a href="#" class="pagination-link" aria-label="Go to page 2">2</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a href="#" class="pagination-link" aria-label="Go to page 40">40</a></li>
+                    <li><a href="#" class="pagination-link is-current" aria-label="Go to page 43">43</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</body>
+</html>
